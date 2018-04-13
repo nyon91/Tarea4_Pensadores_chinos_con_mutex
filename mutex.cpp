@@ -23,7 +23,7 @@ struct Chino {
 void *brete(void* arg){
     struct Chino *data = (struct Chino *) arg;
     int valor;
-    valor = rand() % 100;
+    valor = rand() % 100;   //  funcion random entre 0 y 1
     if (valor == 0){
         data->comer = 0;
         data->pensar = 1;
@@ -136,7 +136,7 @@ int main()
         }
     }
 
-    for (i = 1; i <= N; i++){
+    for (i = 1; i <= 6; i++){
         const char* prog = doubleToStr(argArray[i].pensar);
         const char* abc = doubleToStr(argArray[i].comer);
         move(2*i,6);
